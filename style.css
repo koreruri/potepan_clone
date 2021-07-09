@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%;
+  color: #222;
   padding: 0;
 }
 
@@ -146,12 +147,23 @@ body {
   font-weight: bold;
 }
 
+.section-header span {
+  font-family: 'Lato', sans-serif;
+}
+
 .section-header::after {
   content: "";
   display: block;
   border-bottom: solid 6px #f79314;
   width: 50px;
   margin-top: 20px;
+}
+
+.potepancamp {
+  font-family: 'Lato', sans-serif;
+  font-size: 5rem;
+  font-weight: 900;
+  letter-spacing: 1px;
 }
 
 /*top*/
@@ -235,13 +247,6 @@ body {
   font-weight: bold;
 }
 
-.about-text span {
-  font-family: 'Lato', sans-serif;
-  font-size: 5rem;
-  font-weight: 900;
-  letter-spacing: 1px;
-}
-
 .about p {
   font-size: 1.4rem;
   line-height: 2.3;
@@ -255,9 +260,204 @@ body {
   width: 320px;
 }
 
-/*movie-section*/
+/*movie*/
 
-.movie {
+.movie-content {
   text-align: center;
   margin-top: 60px;
+}
+
+/*features*/
+
+.feature {
+  position: relative;
+  background: #fcfaf5;
+  margin-top: 90px;
+  padding: 40px;
+  text-align: center;
+  border-radius: 20px;
+  z-index: -2;
+}
+
+.number {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 100px;
+  line-height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  background: #fcfaf5;
+  color: #f79314;
+  font-size: 4rem;
+  font-weight: bold;
+  z-index: -1;
+}
+
+.feature-heading {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.feature-text {
+  margin-top: 30px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  line-height: 32px;
+}
+
+.feature-text > span {
+  font-family: 'Lato', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1;
+  color: #f79314;
+}
+.examples {
+  background: #fff;
+  margin-top: 40px;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.examples-heading {
+  display: inline-block;
+}
+
+.examples-heading h4 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  display: inline-block;
+  vertical-align: bottom;
+  line-height: 1;
+}
+
+.examples-heading img {
+  margin-left: 10px;
+  width: 34px;
+  vertical-align: middle;
+}
+
+.examples-heading::after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid #f79314 ;
+  margin-top: 10px;
+}
+
+.examples-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -60px;
+}
+
+.examples-list > li {
+  display: flex;
+}
+
+.examples-list img {
+  width: 100%;
+}
+
+.examples-list.jobs {
+  margin: 15px 0 0 0;
+}
+
+.examples-list.jobs > li {
+  width: 25%;
+  padding: 0 20px;
+}
+
+.examples.students {
+  padding: 40px 70px;
+}
+
+.examples-list.students > li {
+  width: calc(100% / 3);
+  padding: 0 60px;
+}
+
+
+
+.examples.engineers {
+  background: none;
+  padding: 0;
+  margin: 45px -15px 0;
+}
+
+.examples-list.engineers {
+  margin: 0;
+}
+
+.examples-list.engineers > li {
+  width: calc(100% / 3);
+  padding: 0 15px;
+}
+
+.engineer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  font-weight: bold;
+  text-align: start;
+}
+
+.engineer-logo {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.engineer-profile {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.engineer-profile img {
+  width: 60px;
+}
+
+.engineer-name {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  margin-left : 15px;
+}
+
+.engineer-name p:first-child {
+  font-size: 1.4rem;
+  color: #f79314;
+}
+
+.engineer-name p:last-child {
+  font-size: 2rem;
+}
+
+.engineer-text {
+  position: relative;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 14px;
+  background: #f6f6f6;
+  border-radius: 10px;
+}
+
+.engineer-text::before {
+  content: '';
+  position: absolute;
+  top: -25px;
+  left: 29px;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-bottom: 15px solid #f6f6f6;
 }

@@ -360,9 +360,6 @@ body {
   display: flex;
 }
 
-.examples-list img {
-  width: 100%;
-}
 
 .examples-list.jobs {
   margin: 15px 0 0 0;
@@ -382,7 +379,9 @@ body {
   padding: 0 60px;
 }
 
-
+.examples-list.students > li > img {
+  width: 100%;
+}
 
 .examples.engineers {
   background: none;
@@ -417,14 +416,14 @@ body {
   justify-content: center;
 }
 
+.engineer-logo img {
+  width: 100%;
+}
+
 .engineer-profile {
   display: flex;
   align-items: center;
   width: 100%;
-}
-
-.engineer-profile img {
-  width: 60px;
 }
 
 .engineer-name {

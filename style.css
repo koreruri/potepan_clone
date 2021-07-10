@@ -583,3 +583,70 @@ body {
   border-top: 3px solid #f79214;
   transform: rotate(45deg);
 }
+
+.courses .btn {
+  width: 300px;
+  margin: 60px auto 0;
+}
+
+/*message*/
+
+.message {
+  background: #fcfaf5;
+}
+
+.message-contents {
+  margin-top: 60px;
+}
+
+.message-contents h3 {
+  color: #ff802c;
+  background: -webkit-linear-gradient(0deg, #ff802c, #f79214);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  z-index: 1;
+  margin-left: 20px;
+  line-height: 1;
+}
+
+.message-content {
+  display: flex;
+  align-items: center;
+  margin-top: -20px;
+  position: relative;
+  
+}
+
+.message-text {
+  background: #fff;
+  padding: 40px 150px 40px 40px;
+  margin-right: -100px;
+  line-height: 2;
+  font-weight: 500;
+}
+
+.message-text p {
+  
+}
+
+.message-text > p + p {
+  margin-top: 40px;
+}
+
+.message-image {
+ position: relative;
+}
+
+.message-image p {
+  position: absolute;
+  padding: 20px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 10px #808080;
+}
+
+.message-image span {
+  font-size: 2.4rem;
+}

@@ -40,6 +40,11 @@ body {
   border-radius: 30px;
 }
 
+.section-btn {
+  width: 300px;
+  margin: 60px auto 0;
+}
+
 .btn span {
   display: block;
 }
@@ -584,10 +589,6 @@ body {
   transform: rotate(45deg);
 }
 
-.courses .btn {
-  width: 300px;
-  margin: 60px auto 0;
-}
 
 /*message*/
 
@@ -650,3 +651,77 @@ body {
 .message-image span {
   font-size: 2.4rem;
 }
+
+/*voices*/
+
+.voices-list {
+  display: flex;
+  margin: 60px -20px 0 -20px;
+}
+
+.voice {
+  width: calc (100% / 3);
+  padding: 0 20px;
+  font-weight: bold;
+}
+
+.voice-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.voice a:hover {
+  color: #f79314;
+  transition: 0.2s;
+}
+
+.voice-image > img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.voice-image > img:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+
+.voice-image-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 80px 20px 15px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 55%, rgba(30, 30, 30, 0.7), rgba(50, 50, 50, 0));
+}
+
+.voice-image-text p {
+  font-size: 1.6rem;
+}
+
+.voice-image-text p:first-child {
+  color: #f79314;
+}
+
+.voice-image-text p:last-child {
+  color: #fff;
+  margin-top: 5px;
+  padding-top: 4px;
+  border-top: 1px solid #fff;
+}
+
+.voice-image-text p > span:first-child {
+  font-size: 2rem;
+}
+
+.voice-image-text p > span:last-child {
+  font-size: 1.2rem;
+  margin-left: 15px;
+}
+
+.voice a > p {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  line-height: 1.8;
+}
+

@@ -2,6 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>サイト模写</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900%7CNoto+Sans+JP:400,500,700&display=swap" rel="stylesheet">
     
@@ -11,11 +12,16 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-nav clearfix">
+        <div class="header-nav flex">
           <a class="hover-opacity" href="#">
-            <img class="header-logo" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/header-logo.png" alt="potepan">
+            <img class="header-logo" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/header-logo.png" alt="POTEPAN CAMP">
           </a>
           <nav class="header-nav-items">
+            <div class="header-nav-hamburger">
+              <span class="header-nav-hamburger-line"></span>
+              <span class="header-nav-hamburger-line"></span>
+              <span class="header-nav-hamburger-line"></span>
+            </div>
             <ul class="flex">
               <li class="header-nav-item"><a class="hover-opacity" href="https://camp.potepan.com/about"><span>ABOUT</span><span>初めての方へ</span></a></li>
               <li class="header-nav-item"><a class="hover-opacity" href="https://camp.potepan.com/flow"><span>FLOW</span><span>卒業までの流れ</span></a></li>
@@ -23,9 +29,9 @@
               <li class="header-nav-item"><a class="hover-opacity" href="https://camp.potepan.com/interview"><span>INTERVIEW</span><span>受講者の声</span></a></li>
               <li class="header-nav-item"><a class="hover-opacity" href="https://camp.potepan.com/faq"><span>FAQ</span><span>よくある質問</span></a></li>
               <li class="header-nav-item"><a class="hover-opacity" href="https://camp.potepan.com/company"><span>COMPANY</span><span>会社概要</span></a></li>
-              <li class="nav-btn-outline flex">
+              <li class="nav-btn-outline">
                 <div class="nav-btn hover-opacity">
-                  <a href="https://camp.potepan.com/contact"><span>無料カウンセリング<span></a>
+                  <a class="flex" href="https://camp.potepan.com/contact">無料カウンセリング</a>
                 </div>
               </li>
             </ul>
@@ -40,7 +46,7 @@
             <div class="circle">
               <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/badge-number1.svg" alt="プログラミングスクールでWebエンジニア輩出No.1">
             </div>
-            <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/top-hero-logo.png" alt="potepan">
+            <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/top-hero-logo.png" alt="POTEPAN CAMP">
             <h2>本気で<span>Webエンジニア</span>を目指すなら、</h2>
             <h2>本気のプログラミング学習。</h2>
             <a class="btn hover-opacity" href="https://camp.potepan.com/contact">無料カウンセリング</a>
@@ -89,14 +95,15 @@
             <p><span>POTEPAN CAMP</span>が選ばれる理由</p>
           </header>
           <div class="section-contents">
-            
             <ol class="features-list">
               <li class="feature bg-beige jobs">
                 <p class="number bg-beige">01</p>
                 <h3 class="feature-heading">豊富な転職実績</h3>
                 <p class="feature-text">
-                  転職サポート希望者の多くが Web系エンジニアとして転職成功しております。</br>
-                  10000人以上の利用者を抱える転職サポートサービスを運営する当社だからこそ、<br>
+                  転職サポート希望者の多くが Web系エンジニアとして転職成功しております。
+                  <br>
+                  10000人以上の利用者を抱える転職サポートサービスを運営する当社だからこそ、
+                  <br>
                   企業の求めている人材像に即した教育カリキュラムを反映できます。
                 </p>
                 <div class="examples jobs">
@@ -105,14 +112,14 @@
                     <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/desc-list-example-title.png">
                   </div>
                   <ul class="examples-list jobs">
-                    <li><img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/example-company01.png"></li>
-                    <li><img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/example-company02.png"></li>
-                    <li><img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/engineer-conpany-3.png"></li>
-                    <li><img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/example-company04.png"></li>
-                    <li><img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/example-company05.png"></li>
-                    <li><img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/example-company06.png"></li>
-                    <li><img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/example-company07.png"></li>
-                    <li><img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/example-company08.png"></li>
+                    <li><img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/example-company01.png" alt></li>
+                    <li><img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/example-company02.png" alt></li>
+                    <li><img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/engineer-conpany-3.png" alt></li>
+                    <li><img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/example-company04.png" alt></li>
+                    <li><img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/example-company05.png" alt></li>
+                    <li><img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/example-company06.png" alt></li>
+                    <li><img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/example-company07.png" alt></li>
+                    <li><img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/example-company08.png" alt></li>
                   </ul>
                 </div>
               </li>
@@ -124,9 +131,9 @@
                 </p>
                 <div class="examples students">
                   <ul class="examples-list students">
-                    <li><img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/example-data01@2x.png"></li>
-                    <li><img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/example-data02.png"></li>
-                    <li><img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/example-data03.png"></li>
+                    <li><img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/example-data01@2x.png" alt="example-data01"></li>
+                    <li><img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/example-data02.png" alt="example-data02"></li>
+                    <li><img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/example-data03.png" alt="example-data03"></li>
                   </ul>
                 </div>
               </li>
@@ -141,10 +148,10 @@
                     <li>
                       <div class="engineer flex">
                         <div class="engineer-logo flex">
-                          <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/engineer-conpany-logo01.png">
+                          <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/engineer-conpany-logo01.png" alt="engineer-conpany-logo01">
                         </div>
                         <div class="engineer-profile flex">
-                          <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/engineer-logo01.png">
+                          <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/engineer-logo01.png" alt="engineer-logo01">
                           <div class="engineer-name flex">
                             <p>株式会社grooves</p>
                             <p>Railsエンジニア</p>
@@ -158,10 +165,10 @@
                     <li>
                       <div class="engineer flex">
                         <div class="engineer-logo flex">
-                          <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/engineer-conpany-logo02.png">
+                          <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/engineer-conpany-logo02.png" alt="engineer-conpany-logo02">
                         </div>
                         <div class="engineer-profile flex">
-                          <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/engineer-logo02.png">
+                          <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/engineer-logo02.png" alt="engineer-logo02">
                           <div class="engineer-name flex">
                             <p>株式会社チュートリアル</p>
                             <p>Railsエンジニア</p>
@@ -175,10 +182,10 @@
                     <li>
                       <div class="engineer flex">
                         <div class="engineer-logo flex">
-                          <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/engineer-conpany-logo03.png">
+                          <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/engineer-conpany-logo03.png" alt="engineer-conpany-logo03">
                         </div>
                         <div class="engineer-profile flex">
-                          <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/engineer-logo03.png">
+                          <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/engineer-logo03.png" alt="engineer-logo03">
                           <div class="engineer-name flex">
                             <p>株式会社Readyfor</p>
                             <p>Railsエンジニア</p>
@@ -205,9 +212,9 @@
           <div class="section-contents">
             <ul class="course-list">
               <li>
-                <a class="flex" href="https://camp.potepan.com/course/#webapp">
+                <a class="flex hover-parent" href="https://camp.potepan.com/course/#webapp">
                   <div class="course-title flex web">
-                    <h3>Webアプリケーション</br>コース</h3>
+                    <h3>Webアプリケーション<br>コース</h3>
                   </div>
                   <div class="course-contents">
                     <p class="course-text web">初心者からプログラミングを使えるようになるためのスタンダードコース</p>
@@ -215,14 +222,14 @@
                       <p class="conditions-title">応募条件</p>
                       <p class="conditions-contents">Windows or MacのPCを持っている方</p>
                     </div>
-                    <p class="link">詳しくはこちら</p>
+                    <p class="link color-text">詳しくはこちら</p>
                   </div>
                 </a>
               </li>
               <li>
-                <a class="flex" href="https://camp.potepan.com/course/#railscareer">
+                <a class="flex hover-parent" href="https://camp.potepan.com/course/#railscareer">
                   <div class="course-title flex rails">
-                    <h3>Railsキャリア</br>コース</h3>
+                    <h3>Railsキャリア<br>コース</h3>
                   </div>
                   <div class="course-contents">
                     <p class="course-text rails">初心者からエンジニア転職を目指す方向けのエキスパートコース</p>
@@ -230,7 +237,7 @@
                       <p class="conditions-title">応募条件</p>
                       <p class="conditions-contents">MacのPCを持っている方</p>
                     </div>
-                    <p class="link">詳しくはこちら</p>
+                    <p class="link color-text">詳しくはこちら</p>
                   </div>
                 </a>
               </li>
@@ -256,14 +263,14 @@
                   ポテパンではエンジニア転職支援サービスを運営しており、8000名以上のエンジニア様と1500社以上の採用企業様と取引がございます。開発がしっかりとできるエンジニアを育て、エンジニア不足を解決できないかと考えスクール事業を始めました。
                 </p>
                 <p>
-                  エンジニア転職のノウハウと、企業側から随時フィードバックをもらうことで、エンジニアになる上での最適なカリキュラムをご用意することができました。</br>
+                  エンジニア転職のノウハウと、企業側から随時フィードバックをもらうことで、エンジニアになる上での最適なカリキュラムをご用意することができました。<br>
                   ゴールに向かい無駄なものをそぎ落とす事で高品質で、低価格なスクールとなっております。
                 </p>
                 <p>「エンジニアになりたい」「サービスを作りたい」など本気でプログラミングを勉強したいという方に、是非ご利用いただければと思っております。</p>
               </div>
               <div class="message-image">
-                <p>株式会社ポテパン</br>代表取締役<span>宮崎</span></p>
-                <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/message-thumbnail.png" alt="宮崎">
+                <p>株式会社ポテパン<br>代表取締役<span>宮崎</span></p>
+                <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/message-thumbnail.png" alt>
               </div>
             </div>
           </div>
@@ -281,7 +288,7 @@
               <li class="voice">
                 <a class="hover-parent" href="https://camp.potepan.com/interview/716">
                   <div class="voice-image">
-                    <img class="scale-img" src="https://camp.potepan.com/wp-content/uploads/2021/04/水埜さん.jpg">
+                    <img class="scale-img" src="https://camp.potepan.com/wp-content/uploads/2021/04/水埜さん.jpg" alt>
                     <div class="voice-image-text">
                       <p>Railsキャリアコース</p>
                       <p><span>M.Z</span>さん<span>前職：プラント企業の法務部</span></p>
@@ -293,7 +300,7 @@
               <li class="voice">
                 <a class="hover-parent" href="https://camp.potepan.com/interview/708">
                   <div class="voice-image">
-                    <img class="scale-img" src="https://camp.potepan.com/wp-content/uploads/2021/04/小松さん.jpg">
+                    <img class="scale-img" src="https://camp.potepan.com/wp-content/uploads/2021/04/小松さん.jpg" alt>
                     <div class="voice-image-text">
                       <p>Railsキャリアコース</p>
                       <p><span>K.T</span>さん<span>前職：電子部品メーカーの技術職</span></p>
@@ -305,7 +312,7 @@
               <li class="voice">
                 <a class="hover-parent" href="https://camp.potepan.com/interview/691">
                   <div class="voice-image">
-                    <img class="scale-img" src="https://camp.potepan.com/wp-content/uploads/2020/12/131478795_397238574816551_3842722825712242700_n.jpg">
+                    <img class="scale-img" src="https://camp.potepan.com/wp-content/uploads/2020/12/131478795_397238574816551_3842722825712242700_n.jpg" alt>
                     <div class="voice-image-text">
                       <p>選抜クラス キャリアコース</p>
                       <p><span>H.Y</span>さん<span>前職：メガネ量販店の販売員</span></p>
@@ -347,7 +354,7 @@
               <li class="service">
                 <a class="hover-parent" href="https://freelance.potepan.com/">
                   <div class="service-image flex freelance">
-                    <img class="scale-img" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/service-media-thumbnail01.png">
+                    <img class="scale-img" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/service-media-thumbnail01.png" alt="service-media-thumbnail01">
                   </div>
                   <p class="color-text">ポテパンフリーランスは、フリーランス初心者のエンジニアに案件情報を紹介するサービスです。</p>
                 </a>
@@ -355,7 +362,7 @@
               <li class="service">
                 <a class="hover-parent" href="https://career.potepan.com/">
                   <div class="service-image flex career">
-                    <img class="scale-img" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/service-media-thumbnail02.png">
+                    <img class="scale-img" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/service-media-thumbnail02.png" alt="service-media-thumbnail02">
                   </div>
                   <p class="color-text">技術のわかるエージェントがあなたの転職をサポートするサービスです。</p>
                 </a>
@@ -363,7 +370,7 @@
               <li class="service">
                 <a class="hover-parent" href="https://style.potepan.com/">
                   <div class="service-image flex">
-                    <img class="scale-img" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/service-media-thumbnail04.png">
+                    <img class="scale-img" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/service-media-thumbnail04.png" alt="service-media-thumbnail04">
                   </div>
                   <p class="color-text">エンジニアのためのお役立ちコンテンツを厳選してお送りしているサービスです。</p>
                 </a>
@@ -384,13 +391,13 @@
               <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/footer-logo.png" alt="POTEPAN CAMP">
             </a>
             <p class="company-name">株式会社ポテパン</p>
-            <p>〒150-0002</br>東京都渋谷区渋谷2－2－5</br>クルスビル7階</p>
+            <p>〒150-0002<br>東京都渋谷区渋谷2－2－5<br>クルスビル7階</p>
             <div class="sns-link">
               <a class="hover-opacity" href="https://www.facebook.com/potepan1/">
-                <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/footer-social-facebook.png">
+                <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/footer-social-facebook.png" alt="Facebook">
               </a>
               <a class="hover-opacity" href="https://twitter.com/potepan0901">
-                <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/footer-social-twitter.png">
+                <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/footer-social-twitter.png" alt="Twitter">
               </a>
             </div>
           </address>

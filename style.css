@@ -994,6 +994,22 @@ body {
     display: none;
   }
   
+  .examples-list {
+    margin: 0 -30px;
+  }
+  
+  .examples-list.jobs > li {
+    padding: 0 10px;
+  }
+  
+  .examples.students {
+    padding: 30px;
+  }
+  
+  .examples-list.students > li {
+    padding: 0 30px;
+  }
+  
   /*message*/
   
   .message .section-contents h3 {
@@ -1015,5 +1031,32 @@ body {
   
   .message-image {
     order: 1;
+  }
+  
+  /*voices*/
+  
+  .voices-list.flex {
+    flex-direction: column;
+    margin: 0;
+    padding: 0 160px;
+  }
+  
+  .voice {
+    padding: 0;
+  }
+  
+  .voice-image {
+    width: 100%;
+  }
+  
+  .voice-image > img{
+    height: 604px;
+    object-fit: cover;
+  }
+  
+  .voice + .voice {
+    margin-top: 20px;
+    border-top: 1px solid #efefef;
+    padding-top: 30px;
   }
 }

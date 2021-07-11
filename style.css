@@ -13,6 +13,11 @@ body {
 
 /*parts*/
 
+.flex {
+  display: flex;
+  align-items: center;
+}
+
 .clearfix::after {
   content: '';
   display: block;
@@ -64,6 +69,22 @@ body {
   opacity: 0.7;
 }
 
+.hover-parent:hover .scale-img {
+  transform: scale(1.1);
+}
+
+.hover-parent:hover .color-text {
+  color: #f79314;
+}
+
+.scale-img {
+  transition: transform 0.2s;
+}
+
+.color-text {
+  transition: 0.2s;
+}
+
 /*header*/
 
 .header {
@@ -81,17 +102,8 @@ body {
   width: 185px;
 }
 
-/*.header-logo:hover {*/
-/*  opacity: 0.7;*/
-/*}*/
-
 .header-nav-items {
   float: right;
-}
-
-.header-nav-items ul {
-  display: flex;
-  align-items: center;
 }
 
 .header-nav-item {
@@ -119,10 +131,6 @@ body {
   display: block;
 }
 
-.nav-btn-outline {
-  display: flex;
-}
-
 .nav-btn {
   background: #f79314;
   color: #fff;
@@ -131,10 +139,40 @@ body {
   margin-left: 20px;
 }
 
+.bg-gray {
+  background: #f6f6f6;
+}
+
+.bg-beige {
+  background: #fcfaf5;
+}
+
+.bg-orange {
+  background: #f79314;
+  color: #fff;
+}
+
+.bg-img {
+  background-image: url('	https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/bg-section-top-course.png');
+  background-size: 281px 275px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 50px) top;
+}
+
+.english-heading {
+  font-family: 'Lato', sans-serif;
+  font-size: 5rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
 /*main*/
+
 .main-section {
   padding: 75px 0 80px 0;
 }
+
+/*main-section-header*/
 
 .section-header {
   display: flex;
@@ -165,12 +203,11 @@ body {
   margin-top: 20px;
 }
 
-.potepancamp {
-  font-family: 'Lato', sans-serif;
-  font-size: 5rem;
-  font-weight: 900;
-  letter-spacing: 1px;
+/*main-section-contents*/
+.section-contents {
+  margin-top: 60px;
 }
+
 
 /*top*/
 
@@ -228,8 +265,6 @@ body {
 /*about*/
 
 .about {
-  background: #f79314;
-  color: #fff;
   padding-top: 45px;
 }
 
@@ -239,9 +274,7 @@ body {
 }
 
 .about-content.container {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .about-text {
@@ -268,16 +301,14 @@ body {
 
 /*movie*/
 
-.movie-content {
+.movie .section-contents {
   text-align: center;
-  margin-top: 60px;
 }
 
 /*features*/
 
 .feature {
   position: relative;
-  background: #fcfaf5;
   margin-top: 90px;
   padding: 40px;
   text-align: center;
@@ -296,7 +327,6 @@ body {
   line-height: 100px;
   border-radius: 50%;
   text-align: center;
-  background: #fcfaf5;
   color: #f79314;
   font-size: 4rem;
   font-weight: bold;
@@ -405,8 +435,6 @@ body {
 }
 
 .engineer {
-  display: flex;
-  align-items: center;
   flex-direction: column;
   background: #fff;
   padding: 20px;
@@ -417,8 +445,6 @@ body {
 
 .engineer-logo {
   height: 100px;
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -427,14 +453,12 @@ body {
 }
 
 .engineer-profile {
-  display: flex;
-  align-items: center;
   width: 100%;
 }
 
 .engineer-name {
-  display: flex;
   flex-direction: column;
+  align-items: flex-start;
   line-height: 1.5;
   margin-left : 15px;
 }
@@ -469,37 +493,19 @@ body {
 
 /*courses*/
 
-.courses {
-  background: #f6f6f6;
-}
-
-.courses .container {
-  background-image: url(../images/bg-section-top-course.png);
-  background-size: 281px 275px;
-  background-repeat: no-repeat;
-  background-position: calc(100% - 50px) top;
-  padding-top: 35px;
-}
-
-.course-list {
-  margin-top: 60px;
-}
-
 .course-list > li + li {
   margin-top: 40px;
 }
 
 .course-list a {
-  display: flex;
+  align-items: stretch;
   background: #fff;
   padding: 30px;
   font-weight: bold;
 }
 
 .course-title {
-  display: flex;
   justify-content: center;
-  align-items: center;
   width: 30%;
   margin: 0 30px 0 -50px;
   border: solid 3px;
@@ -592,15 +598,7 @@ body {
 
 /*message*/
 
-.message {
-  background: #fcfaf5;
-}
-
-.message-contents {
-  margin-top: 60px;
-}
-
-.message-contents h3 {
+.message .section-contents h3 {
   color: #ff802c;
   background: -webkit-linear-gradient(0deg, #ff802c, #f79214);
   -webkit-background-clip: text;
@@ -612,8 +610,6 @@ body {
 }
 
 .message-content {
-  display: flex;
-  align-items: center;
   margin-top: -20px;
   position: relative;
   
@@ -655,8 +651,8 @@ body {
 /*voices*/
 
 .voices-list {
-  display: flex;
-  margin: 60px -20px 0 -20px;
+  align-items: stretch;
+  margin: 0 -20px;
 }
 
 .voice {
@@ -670,20 +666,10 @@ body {
   overflow: hidden;
 }
 
-.voice a:hover {
-  color: #f79314;
-  transition: 0.2s;
-}
-
 .voice-image > img {
   width: 100%;
   height: 320px;
   object-fit: cover;
-}
-
-.voice-image > img:hover {
-  transform: scale(1.1);
-  transition: transform 0.2s;
 }
 
 .voice-image-text {
@@ -725,3 +711,168 @@ body {
   line-height: 1.8;
 }
 
+/*company-interview*/
+
+
+.company-img {
+  width: 100%;
+}
+
+.company-interview .section-contents {
+  position: relative;
+}
+
+.pick-up {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 121px;
+
+}
+
+/*services*/
+
+.services-list {
+  align-items: stretch;
+}
+
+.service {
+  width: calc(100% / 3);
+  padding: 0 20px;
+}
+
+.service-image {
+  background: #fff;
+  border-radius: 10px;
+  padding: 0 20px;
+  border: 2px solid;
+  height: 190px;
+}
+
+.service-image > img {
+  width: 100%;
+}
+
+.service p {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+.service > .hover-parent:hover .scale-img {
+  transform: scale(1.05);
+}
+
+.freelance {
+  border-color: #fc6803;
+}
+
+.career {
+  border-color: #08af77;
+}
+
+/*footer*/
+
+.footer {
+  padding: 80px 0 40px;
+}
+
+.footer .container {
+  position: relative;
+}
+
+.page-top-btn {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  color: #333;
+  box-shadow: 0 12px 30px -15px;
+  position: absolute;
+  top: -105px;
+  right: 50px;
+  transition: 0.2s;
+}
+
+.page-top-btn > .arrow {
+  height: 10px;
+  width: 10px;
+  border-left: solid 3px #f79214;
+  border-top: solid 3px #f79214;
+  transform: rotate(45deg);
+  overflow: hidden;
+}
+
+.page-top-btn:hover {
+  background: #f79214;
+}
+
+.page-top-btn:hover .arrow {
+  border-left: solid 3px #fff;
+  border-top: solid 3px #fff;
+}
+
+.footer-contents {
+  justify-content: space-between;
+  align-items: stretch;
+  font-size: 1.6rem;
+  font-weight: bold; 
+}
+
+.footer-logo {
+  display: inline-block;
+  max-width: 280px;
+}
+
+.footer-logo > img {
+  width: 100%;
+}
+
+.company-name {
+  margin: 25px 0 10px;
+}
+
+.sns-link {
+  margin-top: 35px;
+}
+
+.sns-link > a {
+  display: inline-block;
+  max-width: 60px;
+}
+
+.sns-link > a + a {
+  margin-left: 20px;
+}
+
+.sns-link > a > img {
+  width: 100%;
+}
+
+.footer-nav > li + li {
+  margin-top: 30px;
+}
+
+.footer-nav span {
+  font-weight: normal;
+  margin-left: 16px;
+}
+
+.footer-img {
+  align-self: flex-end;
+}
+
+.footer-img > img {
+  height: 70px;
+}
+
+.footer-copyright {
+  margin-top: 60px;  
+}
+
+.footer-copyright > small {
+  font-size: 1.2rem;
+}

@@ -290,6 +290,10 @@ body {
   margin-bottom: 50px;
 }
 
+.banner > a > img:last-child {
+  display: none;
+}
+
 .about-content.container {
   justify-content: space-between;
 }
@@ -304,11 +308,14 @@ body {
   letter-spacing: 1px;
 }
 
-.about p {
-  font-size: 1.4rem;
+.about-text p {
   line-height: 2.3;
   font-weight: 700;
   margin-top: 15px;
+}
+
+.about-text > p:last-child {
+  display: none;
 }
 
 .about .btn {
@@ -911,7 +918,7 @@ body {
 
 /*responsive*/
 
-/*タブレット*/
+/*Tablet*/
 
 @media screen and (max-width: 1080px) {
   
@@ -989,6 +996,25 @@ body {
     width: 250px;
   }
   
+    /*movie*/
+  .movie-link {
+    position: relative;
+  }
+  
+  .movie-link::before {
+    content: '';
+    display: block;
+    padding-top: 56%;
+  }
+  
+  .movie-link iframe {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+  }
+  
   /*features*/
   .feature-text br {
     display: none;
@@ -1058,5 +1084,140 @@ body {
     margin-top: 20px;
     border-top: 1px solid #efefef;
     padding-top: 30px;
+  }
+}
+
+/*Mobile-L*/
+
+@media screen and (max-width: 767px) {
+  
+  body {
+    font-size: 1.5rem;
+  }
+  
+  /*parts*/
+  .container {
+    max-width: none;
+    padding: 0 20px;
+  }
+  
+  .english-heading {
+    font-size: 3rem;
+  }
+  
+  .btn span:last-child {
+    font-size: 1.2rem;
+  }
+  
+  .section-header h2 {
+    font-size: 2.6rem;
+    line-height: 1.2;
+  }
+  
+  .section-header p {
+    font-size: 1.4rem;
+  }
+  
+  .section-contents {
+    margin-top: 50px;
+  }
+  
+  /*header*/
+  .header {
+    padding: 15px 0;
+  }
+  
+  .header-logo {
+    height: 16px;
+  }
+  
+  /*main*/
+  main {
+    padding-top: 52px;
+  }
+  
+  .main-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  /*top*/
+  .top {
+    padding: 258px 0 12px;
+    background-image: url('https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/top-hero-sp.png');
+  }
+  
+  .top-left {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  
+  .circle {
+    top: -118px;
+    left: -56px;
+  }
+  
+  .circle img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .top-left > img {
+    margin-bottom: 0;
+    padding-top: 6px;
+  }
+  
+  .top-left h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-shadow: 0 0 10px rgb(255 255 255 / 60%);
+  }
+  
+  .top .btn {
+    margin-top: 20px;
+  }
+  
+  .notes {
+    margin-top: 24px;
+    color: #888;
+    background: none;
+  }
+  
+  /*about*/
+  
+  .main-section.about {
+    padding-top: 45px;
+  }
+  
+  .banner > a > img:first-child {
+    display: none;
+  }
+  
+  .banner > a > img:last-child {
+    display: block;
+    margin-left: 5px;
+  }
+  
+  .about h1 {
+    font-size: 2.6rem;
+    text-align: center;
+  }
+  
+  .about-text > p:last-child {
+    display: block;
+    margin-top: 0;
+  }
+  
+  /*movie*/
+  .movie-link {
+    margin-bottom: -50px;
+  }
+}
+
+/*Mobile-S*/
+
+@media screen and (max-width: 480px) {
+  .banner > a > img:last-child {
+    margin-left: 7.5px;
   }
 }

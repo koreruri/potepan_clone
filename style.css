@@ -196,6 +196,10 @@ body {
   font-weight: bold;
 }
 
+.section-header  br {
+  display: none;
+}
+
 .section-header p {
   margin-top: 10px;
   font-size: 1.6rem;
@@ -735,6 +739,10 @@ body {
 }
 
 .voice-image-text p > span:first-child {
+  font-size: 1.6rem;
+}
+
+.voice-image-text p > span:first-child > span {
   font-size: 2rem;
 }
 
@@ -922,6 +930,7 @@ body {
 
 @media screen and (max-width: 1080px) {
   
+  /*header*/
   .header {
     background: #fff;
   }
@@ -997,22 +1006,22 @@ body {
   }
   
     /*movie*/
-  .movie-link {
-    position: relative;
+  
+  .movie .section-contents {
+    padding: 0 50px;
   }
   
-  .movie-link::before {
-    content: '';
-    display: block;
+  .movie-link {
+    position: relative;
     padding-top: 56%;
   }
   
   .movie-link iframe {
     width: 100%;
+    height: 100%;
     position: absolute;
     left: 0;
     top: 0;
-    height: 100%;
   }
   
   /*features*/
@@ -1089,6 +1098,16 @@ body {
 
 /*Mobile-L*/
 
+@media screen and (max-width: 900px) {
+  /*parts*/
+  .section-header h2 {
+    text-align: center;
+  }
+  .section-header h2 > br {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 767px) {
   
   body {
@@ -1103,24 +1122,13 @@ body {
   
   .english-heading {
     font-size: 3rem;
+    letter-spacing: 1px;
   }
   
   .btn span:last-child {
     font-size: 1.2rem;
   }
   
-  .section-header h2 {
-    font-size: 2.6rem;
-    line-height: 1.2;
-  }
-  
-  .section-header p {
-    font-size: 1.4rem;
-  }
-  
-  .section-contents {
-    margin-top: 50px;
-  }
   
   /*header*/
   .header {
@@ -1139,6 +1147,29 @@ body {
   .main-section {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+  
+  .section-header h2 {
+    font-size: 2.6rem;
+    line-height: 1.2;
+  }
+  
+  .section-header p {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  
+  .section-header p > br {
+    display: block;
+  }
+  
+  .section-contents {
+    margin-top: 50px;
+  }
+  
+  .section-btn {
+    margin-top: 40px;
+    max-width: 250px;
   }
   
   /*top*/
@@ -1209,8 +1240,177 @@ body {
   }
   
   /*movie*/
+  
+  .movie .section-contents {
+    padding: 0;
+  }
   .movie-link {
     margin-bottom: -50px;
+  }
+  
+  /*features*/
+  .features-list {
+    margin-top: 90px;
+  }
+  
+  .feature {
+    padding: 30px 20px 20px;
+  }
+  
+  .number {
+    margin-top: -70px;
+    width: 80px;
+    line-height: 80px;
+    font-size: 3rem;
+  }
+  
+  .feature-heading {
+    font-size: 20px;
+    margin-top: -10px;
+  }
+  
+  .feature-text {
+    font-size: 1.5rem;
+    text-align: start;
+    line-height: 2.2;
+  }
+  
+  .feature-text span {
+    font-size: 2.4rem;
+  }
+  
+  .examples {
+    padding: 20px;
+  }
+  
+  .examples-heading h4 {
+    font-size: 1.6rem;
+  }
+  
+  .examples-heading img {
+    margin-left: 5px;
+    width: 24px;
+  }
+  
+  .examples-heading::after {
+    margin-top: 5px;
+    border-bottom: 2px solid #f79314;
+  }
+  
+  .examples-list {
+    margin: 0;
+  }
+  
+  .examples-list.jobs > li {
+    width: 50%;
+    padding: 10px 5px;
+  }
+  
+  .examples.students {
+    padding: 20px;
+  }
+  
+  .examples-list.students > li {
+    padding: 0;
+  }
+  
+  .examples-list.students > li:first-child {
+    width: 80%;
+    margin: 0 auto;
+  } 
+  
+  .examples-list.students > li + li {
+    width: 45%;
+    margin-top: 30px;
+  }
+  
+  .examples-list.engineers > li {
+    width: 100%;
+  }
+  
+  .examples-list.engineers > li + li {
+    margin-top: 20px;
+  }
+  
+  .engineer {
+    padding: 10px 20px 20px;
+  }
+  
+  .engineer-text p {
+    font-size: 1.5rem;
+    line-height: 2;
+  }
+  
+  /*courses*/
+  .course-list {
+    padding: 0 20px;
+  }
+  
+  .course-list > li + li {
+    margin-top: 60px;
+  }
+  
+  .course-list a {
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .course-title {
+    width: 100%;
+    height: 120px;
+    margin: -40px 0 0 0;
+  }
+  
+  .course-title h3 {
+    font-size: 2rem;
+  }
+  
+  .course-contents {
+    width: 100%;
+    margin-top: 25px;
+  }
+  
+  .conditions {
+    margin-top: 25px;
+  }
+  
+  .conditions-contents {
+    margin-top: 7px;
+    padding-bottom: 0;
+  }
+  
+  .link {
+    position: static;
+    text-align: right;
+    margin-top: 25px;
+    padding-right: 20px;
+  }
+  
+  .link::after {
+    right: 0;
+  }
+  
+  /*message*/
+  .message-image > img {
+    width: 100%;
+  }
+  
+  /*voices*/
+  .voices-list.flex {
+    padding: 0 40px;
+  }
+  
+  .voice-image > img {
+    height: 305px;
+  }
+  
+  .voice-image-text > p:last-child {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .voice-image-text p > span:last-child {
+    margin-left: 0;
   }
 }
 

@@ -600,6 +600,8 @@ body {
 .conditions-contents {
   margin-top: 7px;
   padding-bottom: 20px;
+  margin-left: 1.9em;
+  text-indent: -1.9em;
 }
 
 .conditions-contents::before {
@@ -697,7 +699,7 @@ body {
 }
 
 .voice {
-  width: calc (100% / 3);
+  width: calc(100% / 3);
   padding: 0 20px;
   font-weight: bold;
 }
@@ -705,12 +707,15 @@ body {
 .voice-image {
   position: relative;
   overflow: hidden;
-  width: 320px;
+  padding-top: 100%;
 }
 
 .voice-image > img {
   width: 100%;
-  height: 320px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   object-fit: cover;
 }
 
@@ -762,6 +767,10 @@ body {
 
 .company-img {
   width: 100%;
+}
+
+.company-img.sp {
+  display: none;
 }
 
 .company-interview .section-contents {
@@ -867,6 +876,18 @@ body {
   align-items: stretch;
   font-size: 1.6rem;
   font-weight: bold; 
+}
+
+.footer-nav {
+  order: 2;
+}
+
+.footer-img {
+  order: 3
+}
+
+.company-info {
+  order: 1;
 }
 
 .footer-logo {
@@ -1078,15 +1099,7 @@ body {
   
   .voice {
     padding: 0;
-  }
-  
-  .voice-image {
     width: 100%;
-  }
-  
-  .voice-image > img{
-    height: 604px;
-    object-fit: cover;
   }
   
   .voice + .voice {
@@ -1098,13 +1111,50 @@ body {
 
 /*Mobile-L*/
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 840px) {
   /*parts*/
   .section-header h2 {
     text-align: center;
   }
   .section-header h2 > br {
     display: block;
+  }
+  
+  .services .section-header h2 > br {
+    display: none;
+  }
+  
+  /*courses*/
+  .course-title h3 {
+    font-size: 1.5rem;
+  }
+  
+  /*voices*/
+  .voices-list.flex {
+    padding: 0 80px;
+  }
+  
+  /*features-engineers*/
+  
+  .examples-list.engineers > li {
+    width: 100%;
+  }
+  
+  .examples-list.engineers > li + li {
+    margin-top: 20px;
+  }
+  
+  .engineer {
+    padding: 10px 20px 20px;
+  }
+  
+  .engineer-logo {
+    padding: 0 140px;
+  }
+  
+  .engineer-text p {
+    font-size: 1.5rem;
+    line-height: 2;
   }
 }
 
@@ -1129,6 +1179,27 @@ body {
     font-size: 1.2rem;
   }
   
+  .bg-img {
+    background: none;
+  }
+  
+  .bg-gray {
+    position: relative;
+  }
+  
+  .bg-gray::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 60%;
+    display: block;
+    width: 130px;
+    height: 130px;
+    background-image: url('https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/bg-section-top-course.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
   
   /*header*/
   .header {
@@ -1149,6 +1220,10 @@ body {
     padding-bottom: 60px;
   }
   
+  .section-header > * {
+    z-index: 1;
+  }
+  
   .section-header h2 {
     font-size: 2.6rem;
     line-height: 1.2;
@@ -1162,6 +1237,7 @@ body {
   .section-header p > br {
     display: block;
   }
+  
   
   .section-contents {
     margin-top: 50px;
@@ -1324,21 +1400,8 @@ body {
     margin-top: 30px;
   }
   
-  .examples-list.engineers > li {
-    width: 100%;
-  }
-  
-  .examples-list.engineers > li + li {
-    margin-top: 20px;
-  }
-  
-  .engineer {
-    padding: 10px 20px 20px;
-  }
-  
-  .engineer-text p {
-    font-size: 1.5rem;
-    line-height: 2;
+  .engineer-logo {
+    padding: 0;
   }
   
   /*courses*/
@@ -1364,6 +1427,12 @@ body {
   .course-title h3 {
     font-size: 2rem;
   }
+  
+    
+  .course-text {
+    line-height: 1.5;
+  }
+
   
   .course-contents {
     width: 100%;
@@ -1400,10 +1469,6 @@ body {
     padding: 0 40px;
   }
   
-  .voice-image > img {
-    height: 305px;
-  }
-  
   .voice-image-text > p:last-child {
     display: flex;
     flex-direction: column;
@@ -1412,12 +1477,110 @@ body {
   .voice-image-text p > span:last-child {
     margin-left: 0;
   }
+  
+  /*company-inteview*/
+  .company-img.pc {
+    display: none;
+  }
+  
+  .company-img.sp {
+    display: block;
+  }
+  
+  /*services*/
+  .services-list {
+    flex-direction: column;
+  }
+  
+  .service {
+    width: 100%;
+  }
+  
+  .service + .service {
+    margin-top: 40px;
+  }
+
+  .service-image {
+    justify-content: center;
+  }
+  
+  .service-image > img {
+    max-width: 280px;
+  }
+  
+  .service p {
+    font-size: 1.5rem;
+  }
+  
+  /*footer*/
+  .footer {
+    padding-top: 60px;
+  }
+  
+  .page-top-btn {
+    right: 20px;
+    top: -85px;
+  }
+  
+  .footer-contents.flex {
+    display: block;
+  }
+  
+  .footer-nav {
+    margin-left: 20px;
+  }
+  
+  .footer-img {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .company-info {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #fff;
+    text-align: center;
+  }
+  
+  .footer-copyright {
+    text-align: center;
+  }
 }
 
-/*Mobile-S*/
+/*Mobile-M*/
 
 @media screen and (max-width: 480px) {
   .banner > a > img:last-child {
     margin-left: 7.5px;
+  }
+}
+
+/*Mobile-S*/
+
+@media screen and (max-width: 414px) {
+  
+  /*top*/
+  .circle {
+    top: -98px;
+    left: -24px;
+  }
+  
+  .circle img {
+    width: 88px;
+    height: 88px;
+  }
+  
+  .top-left h2 {
+    text-align: center;
+  }
+  
+  /*about*/
+  .banner > a > img:last-child {
+    margin-left: 5px;
+  }
+  
+  /*courses*/
+  .course-title h3 {
+    font-size: 1.7rem;
   }
 }
